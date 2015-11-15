@@ -1,0 +1,16 @@
+{
+  "name": "salary-calc",
+  "version": "0.10.0",
+  "description": "Salary calculator based on given criteria",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha ./tests",
+    "start": "node main.js"
+  },
+  "author": "Waqas Ahmed (wakqasahmed@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^2.3.3",
+    "prompt": "^0.2.14"
+  }
+}
