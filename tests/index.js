@@ -60,6 +60,13 @@ describe('salaryCalc()', function() {
       expectedSalaryMsg: "Wrong input test, 25 worked hours mentioned for a day"
     }, //wrong input test        
     {
+      args: "-1 1 2 3 4 5 6",
+      expectedSalary: 'NA',
+      expectedDays: 7,
+      expectedValidity: false,
+      expectedSalaryMsg: "Wrong input test, -1 worked hours mentioned for a day"
+    }, //wrong input test            
+    {
       args: "8 8 8 8 8 0 0",
       expectedSalary: 400,
       expectedDays: 7,

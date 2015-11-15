@@ -40,7 +40,7 @@ var isInputValid = function(inputArr){
   var isValid = true;
   
   inputArr.forEach(function(element, index, array) {
-    if(isNaN(element) || element > 24)
+    if(isNaN(element) || element > 24 || element < 0)
       isValid = false;    
   })
 
@@ -84,7 +84,7 @@ var salaryCalc = function(inputStr) {
 
     }, 0);
   } else {
-    console.log('Invalid input, contains non-numeric elements');
+    console.log('Invalid input, contains non-numeric elements or negative numbers');
     return 'NA';
   }
 
